@@ -1,0 +1,45 @@
+{
+  "entities": {
+    "DailyFreeConfig": {
+      "title": "DailyFreeConfig",
+      "description": "Daily Free Episode configuration for 6:00 AM IST unlocks",
+      "type": "object",
+      "properties": {
+        "dateKey": { "type": "string" },
+        "storyId": { "type": "string" },
+        "episodeId": { "type": "string" },
+        "storyTitle": { "type": "string" },
+        "episodeTitle": { "type": "string" },
+        "episodeNumber": { "type": "integer" },
+        "unlockTimeUtcEpochMs": { "type": "integer" },
+        "active": { "type": "boolean" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["dateKey", "storyId", "episodeId", "active", "unlockTimeUtcEpochMs"]
+    },
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile information",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "photoUrl": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "email", "createdAt", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "/admin_configs/daily_free": {
+      "schema": { "$ref": "#/entities/DailyFreeConfig" },
+      "description": "Active Daily Free Episode configuration"
+    },
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/UserProfile" },
+      "description": "User profile"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "JD WAVE",
+  "description": "Telugu audio stories and serialized audio drama platform featuring guest mode, daily free episodes, and encrypted vault playback.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

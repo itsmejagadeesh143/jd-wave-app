@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:translateX="0"
+        android:translateY="0">
+        <!-- Headphone Band -->
+        <path
+            android:fillColor="#00000000"
+            android:strokeWidth="5"
+            android:strokeLineCap="round"
+            android:pathData="M 32,58 C 32,38 42,28 54,28 C 66,28 76,38 76,58">
+            <aapt:attr name="android:strokeColor">
+                <gradient
+                    android:startX="32"
+                    android:startY="28"
+                    android:endX="76"
+                    android:endY="58"
+                    android:type="linear">
+                    <item android:offset="0.0" android:color="#38BDF8" />
+                    <item android:offset="0.5" android:color="#818CF8" />
+                    <item android:offset="1.0" android:color="#F59E0B" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <!-- Left Ear Cup -->
+        <path
+            android:pathData="M 28,52 A 5,5 0 0,1 33,52 L 33,68 A 5,5 0 0,1 28,68 Z"
+            android:fillColor="#38BDF8" />
+        <!-- Right Ear Cup -->
+        <path
+            android:pathData="M 75,52 A 5,5 0 0,1 80,52 L 80,68 A 5,5 0 0,1 75,68 Z"
+            android:fillColor="#F59E0B" />
+        <!-- Audio Wave Bars in Center (representing WAVE) -->
+        <path
+            android:pathData="M 40,56 L 40,64"
+            android:strokeColor="#38BDF8"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M 46,50 L 46,70"
+            android:strokeColor="#60A5FA"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M 54,42 L 54,76"
+            android:strokeColor="#A78BFA"
+            android:strokeWidth="4"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M 62,50 L 62,70"
+            android:strokeColor="#F472B6"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M 68,56 L 68,64"
+            android:strokeColor="#F59E0B"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round" />
+    </group>
+</vector>
